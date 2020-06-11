@@ -1,8 +1,8 @@
 # ResponsiveMullerBrockmann
 ## Who is that [Josef Müller-Brockmann](https://www.google.com/search?q=Josef+M%C3%BCller-Brockmann+work&client=safari&rls=en&source=lnms&tbm=isch&sa=X&ved=2ahUKEwij7MSblPrpAhWqILkGHQVyCisQ_AUoAXoECA4QAw&biw=1792&bih=961)
 Quoting [Graphéine](https://www.grapheine.com/en/history-of-graphic-design/graphic-designer-muller-brockmann-swiss-style):
-> The father of Swiss graphic design
-
+> The father of Swiss graphic design  
+>  
 > Müller-Brockmann is probably one of the most influential graphic designers in the history of our profession. His work is always taught, studied and published. It is certainly the figurehead of Swiss graphic design (which also takes the name of international style). His work is influenced by Bauhaus and constructivism. Typography and geometry are predominant. His compositions are based on very "rigid" grids which will be his trademark. An economical and rational style.
 
 So he basically knows a bit or two about grids (he actually wrote [a really interesting book](https://www.amazon.com/-/es/Josef-Müller-Brockmann/dp/3721201450) about them).
