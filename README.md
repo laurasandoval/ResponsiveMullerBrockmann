@@ -13,7 +13,7 @@ I'm a big CSS grid evangelist™, but I realized I didn't have much experience e
 I chose to play around with Müller's graphic design work because of it's very peculiar grids and heavy reliance on typography.
 
 ## Poster Directory
-These are all the posters available to explore in this repo. More will (hopefully) be added soon.
+These are all the posters available to explore in this repo. More will (hopefully) be added soon. In all cases, you can see the original version by adding `/original.jpg` to the URL.
 
 [Musica Viva (1959)](https://laurasandoval.github.io/ResponsiveMullerBrockmann/musica-viva-1959/)           |  [Musica Viva (1961)](https://laurasandoval.github.io/ResponsiveMullerBrockmann/musica-viva-1961/)
 :-------------------------:|:-------------------------:
