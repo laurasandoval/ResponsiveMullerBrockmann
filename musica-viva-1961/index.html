@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de-ch">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
+    <title>musica viva</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        background: #E2D9D0;
+        width: 100%;
+        height: 100%;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      p,
+      ul,
+      li {
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      body {
+        height: auto;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: lowercase;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        text-rendering: geometricPrecision;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+      }
+
+      main {
+        display: grid;
+        grid-gap: 0 64px;
+        grid-template-columns: minmax(auto, 342px) max-content;
+        grid-template-rows: repeat(2, min-content) 64px min-content;
+        transform: rotate(-35deg);
+        transition: transform 0.4s ease;
+      }
+
+      @media (max-width: 900px) {
+        main {
+          grid-template-columns: repeat(2, auto);
+          transform: rotate(0);
+          margin: 0 0 64px 8px;
+        }
+      }
+
+      @media (max-width: 700px) {
+        main {
+          display: block;
+        }
+      }
+
+      main > h1,
+      main > h2,
+      main > .artists {
+        grid-column: 2;
+      }
+
+      main > h1,
+      main > h2,
+      main > .artists li {
+        font-size: 80px;
+        line-height: 1;
+      }
+
+      main > h1 {
+        color: #4d818c;
+      }
+
+      main > h2 {
+        display: flex;
+        flex-flow: column;
+        color: #a46697;
+      }
+
+      @media (max-width: 700px) {
+        main > h2 {
+          margin-bottom: 64px;
+        }
+
+        main > h1,
+        main > h2,
+        main > .artists li {
+          font-size: 64px;
+          font-weight: 600;
+          line-height: 1;
+        }
+      }
+
+      main > .artists {
+        grid-row: 4;
+      }
+
+      main .artists li:nth-child(1) {
+        color: #6375c7;
+      }
+
+      main .artists li:nth-child(2) {
+        color: #d39679;
+      }
+
+      main .artists li:nth-child(3) {
+        color: #9b9c7d;
+      }
+
+      main > .event-info {
+        grid-row: 4;
+      }
+
+      @media (max-width: 700px) {
+        main > .event-info {
+          margin-top: 64px;
+        }
+      }
+
+      main > .event-info .artist-roles {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        grid-gap: 0 16px;
+        padding: 24px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Musica Viva</h1>
+      <h2 role="text"><span>The </span><span>fine arts quartet</span></h2>
+      <ul class="artists">
+        <li>Arnold Schönberg</li>
+        <li>Walter Piston</li>
+        <li>Julian Orbon</li>
+      </ul>
+      <div class="event-info">
+        <p>Tonhalle, kleiner saal</p>
+        <p>Drittes konzert im zyklus musica viva</p>
+        <p>Der Tonhalle-gesellschaft Zürich</p>
+        <p>Donnerstag, den 16. März 1961, 20.15 uhr</p>
+        <div class="artist-roles">
+          <h3>Arnold Schönberg</h3>
+          <h4>Drittes streichquartett, op. 30</h4>
+          <h3>Walter Piston</h3>
+          <h4>Erstes streichquartett</h4>
+          <h3>Julian Orbon</h3>
+          <h4>Erstes streichquartett</h4>
+        </div>
+        <p>Karten zu fr. 3.30 bis 7.70</p>
+        <p>
+          Vorverkauf: Tonhalle-kasse, hug, jecklin, kuoni, kreditanstalt der
+          depositenkasse oerlikon
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
