@@ -1,2 +1,22 @@
 # ResponsiveMullerBrockmann
- Responsive and accessible Josef Müller-Brockmann posters.
+## Who is that Josef Müller-Brockmann
+Quoting Wikipedia:
+> Josef Müller-Brockmann (May 9, 1914 – August 30, 1996) was a Swiss graphic designer and teacher. He studied architecture, design and history of art at both the University and Kunstgewerbeschule Zürich. In 1936 he opened his Zurich studio specialising in graphic design, exhibition design and photography.
+
+So he basically knows a bit or two about grids (he actually wrote [a really interesting book](https://www.amazon.com/-/es/Josef-Müller-Brockmann/dp/3721201450) about grids).
+
+## About this project
+I'm a big CSS grid evangelist™, but I realized I didn't have much experience exploring it in non-work related projects, so I though I might as well do!
+
+I chose to play around with Müller's cliche-ish graphic design work because of it's very peculiar grids and heavy reliance on typography.
+
+## Examples
+
+[Musica Viva (1959)](https://laurasandoval.github.io/ResponsiveMullerBrockmann/musica-viva-1959/)           |  [Musica Viva (1961)](https://laurasandoval.github.io/ResponsiveMullerBrockmann/musica-viva-1961/)
+:-------------------------:|:-------------------------:
+!["Musica Viva" poster from 1959 in its web version](screenshots/musica-viva-1959.png)  |  !["Musica Viva" poster from 1961 in its web version](screenshots/musica-viva-1961.png)
+
+## Acknowledgments
+This silly project (and a big part of my real job) wouldn't be possible without the inspiration and knowledge provided by:
+* Jen Simmons's [Layout Land](https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag)
+* [Mozilla's Developer YouTube channel](https://www.youtube.com/channel/UCh5UlGiu9d6LegIeUCW4N1w)
