@@ -3,7 +3,7 @@
 Quoting Wikipedia:
 > Josef Müller-Brockmann (May 9, 1914 – August 30, 1996) was a Swiss graphic designer and teacher. He studied architecture, design and history of art at both the University and Kunstgewerbeschule Zürich. In 1936 he opened his Zurich studio specialising in graphic design, exhibition design and photography.
 
-So he basically knows a bit or two about grids (he actually wrote [a really interesting book](https://www.amazon.com/-/es/Josef-Müller-Brockmann/dp/3721201450) about grids).
+So he basically knows a bit or two about grids (he actually wrote [a really interesting book](https://www.amazon.com/-/es/Josef-Müller-Brockmann/dp/3721201450) about them).
 
 ## About this project
 I'm a big CSS grid evangelist™, but I realized I didn't have much experience exploring it in non-work related projects, so I though I might as well do!
