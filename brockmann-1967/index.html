@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="de-ch">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
+    <title>Brockmann 1967</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      p,
+      li {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1,
+      h2 {
+        color: #000000;
+      }
+
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        color: #ba2b28;
+        background: #f5f8f1;
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        --body-padding: 24px;
+        --text-columns: 4;
+        height: auto;
+        min-height: 100%;
+        display: grid;
+        grid-template-columns:
+          repeat(2, var(--body-padding)) repeat(var(--text-columns), 1fr)
+          repeat(2, var(--body-padding));
+        grid-template-rows:
+          repeat(2, var(--body-padding)) minmax(
+            calc(var(--body-padding) * 4),
+            auto
+          )
+          max-content minmax(calc(var(--body-padding) * 4), auto) repeat(
+            3,
+            fit-content(100%)
+          )
+          repeat(2, var(--body-padding));
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        text-rendering: geometricPrecision;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body::before {
+        content: "";
+        grid-row: 5/10;
+        grid-column: 2/7;
+        pointer-events: none;
+        border: 4px solid #f1c84c;
+      }
+
+      body::after {
+        content: "";
+        grid-row: 2/7;
+        grid-column: 2/8;
+        border-top: 4px solid #135e95;
+        border-right: 4px solid #135e95;
+        background: linear-gradient(
+          to bottom left,
+          transparent calc(50% - 4px),
+          #135e95 calc(50% - 4px),
+          #135e95 50%,
+          transparent 50%
+        );
+        pointer-events: none;
+      }
+
+      h1 {
+        font-size: 60px;
+        font-weight: 600;
+        grid-column: 5;
+        grid-row: 4;
+      }
+
+      main {
+        grid-row: 6 / 9;
+        grid-column: 1/9;
+        display: grid;
+        grid-template-columns: inherit;
+        grid-row-gap: 12px;
+        counter-reset: orchesterkonzert;
+        z-index: 1;
+      }
+
+      @media (max-width: 900px) {
+        body {
+          --text-columns: 3;
+        }
+        body::after {
+          grid-column-end: 7;
+        }
+        main {
+          grid-column-end: 8;
+        }
+      }
+
+      main::before {
+        content: "";
+        grid-column: 1/3;
+        grid-row: 1/3;
+      }
+
+      main > .column {
+        grid-row: 2;
+        word-break: break-word;
+      }
+
+      main > h2,
+      main > .column {
+        padding-right: 8px;
+      }
+
+      @media (max-width: 640px) {
+        body {
+          --text-columns: 2;
+        }
+        body::before {
+          grid-column-end: 6;
+        }
+        body::after {
+          grid-column-end: 6;
+        }
+        h1 {
+          grid-column: 4;
+        }
+        main {
+          grid-template-columns: repeat(2, var(--body-padding)) auto repeat(
+              2,
+              var(--body-padding)
+            );
+          grid-auto-flow: row;
+          grid-column-end: 7;
+        }
+        main > h2,
+        main > .column {
+          padding-right: 0;
+          grid-column: 3 / 4;
+          grid-row: unset;
+        }
+      }
+
+      main > .column article:not(:first-child) {
+        margin-top: 12px;
+      }
+
+      main > .column > article h3.orchesterkonzert::before {
+        counter-increment: orchesterkonzert;
+        content: counter(orchesterkonzert) ". ";
+      }
+
+      main > .column article.disclaimer {
+        border-top: 1px solid currentColor;
+        padding-top: 4px;
+      }
+
+      main > .column article.disclaimer h3,
+      main > .column article.disclaimer p,
+      main > .column article.disclaimer li {
+        font-size: 8px;
+      }
+
+      main > .column article.disclaimer ol {
+        counter-reset: list;
+        margin: 6px 0 0;
+        padding: 0 0 0 0.7em;
+      }
+
+      main > .column article.disclaimer ol > li {
+        list-style: none;
+        position: relative;
+      }
+
+      main > .column article.disclaimer ol > li:before {
+        counter-increment: list;
+        content: counter(list, lower-alpha) ") ";
+        position: absolute;
+        left: -1.4em;
+      }
+
+      body > .copyright {
+        grid-column: 7;
+        grid-row: 7 / span 2;
+        margin-top: var(--body-padding);
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        font-size: 6px;
+        color: #676767;
+        z-index: 1;
+      }
+      
+      body > .copyright a {
+        color: currentColor;
+        text-decoration: underline;
+        cursor: pointer;
+        margin: -10px;
+        padding: 10px;
+      }
+
+      @media (max-width: 900px) {
+        body > .copyright {
+          margin-right: calc(var(--body-padding) / 2.5);
+        }
+      }
+      
+      @media (max-width: 640px) {
+        body > .copyright {
+          grid-column: 6;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>1967</h1>
+    <main>
+      <h2>Juni-Festwochen</h2>
+      <div class="column">
+        <article>
+          <h3 class="orchesterkonzert">Orchesterkonzert</h3>
+          <p>Dienstag, den 6. Juni 1967</p>
+          <p>Leitung: Otto Klemperer</p>
+          <p>Solisten: Heather Harper, Sopran</p>
+          <p>Janet Baker, Alt</p>
+          <p>Chor: Gemischter Chor Zürich</p>
+          <p>Gustav Mahler: Zweite Sinfonie in c-moll</p>
+        </article>
+        <article>
+          <h3>Liederabend</h3>
+          <p>Donnerstag, den 8. Juni 1967</p>
+          <p>Dietrich Fischer-Dieskau</p>
+          <p>Jörg Demus (Klavier)</p>
+          <p>Schubert: ≪Die schöne Müllerin≫</p>
+        </article>
+        <article>
+          <h3 class="orchesterkonzert">Orchesterkonzert</h3>
+          <p>Dienstag, den 13. Juni 1967</p>
+          <p>Leitung: Rudolf Kempe</p>
+          <p>Solist: Arthur Rubinstein, Klavier</p>
+          <p>Ludwig van Beethoven: Viertes Klavierkonzert in G-dur, op. 58</p>
+          <p>Johannes Brahms: Zweites Klavierkonzert in B-dur, op. 83</p>
+        </article>
+      </div>
+
+      <h2>Zürich 1967</h2>
+      <div class="column">
+        <article>
+          <h3>Zeitgenössische Kammer-musik</h3>
+          <p>Donnerstag, den 15. Juni 1967</p>
+          <p>Heinz Holliger, Oboe/Englischhorn</p>
+          <p>Ursula Holliger, Harfe</p>
+          <p>Edith Picht-Axenfeld, Cembalo</p>
+          <p>Serge Collot, Bratsche</p>
+          <p>
+            Jürg Wyttenbach, Heinz Holliger, Klaus Huber, Hans-Ulrich Lehmann
+            und Karlheinz Stockhausen
+          </p>
+        </article>
+        <article>
+          <h3 class="orchesterkonzert">Orchesterkonzert</h3>
+          <p>Dienstag, den 20. Juni 1967</p>
+          <p>Leitung: William Steinberg</p>
+          <p>Solistin: Moura Lympany, Klavier</p>
+          <p>Walter Piston: Toccata</p>
+          <p>Serge Rachmaninoff: Erstes Klavierkonzert in fis-moll</p>
+          <p>
+            Ludwig van Beethoven: Dritte Sinfonie in Es-dur, op. 55, ≪Eroica≫
+          </p>
+        </article>
+      </div>
+
+      <h2>Konzerte der Tonhalle-Gesellschaft</h2>
+      <div class="column">
+        <article>
+          <h3 class="orchesterkonzert">Orchesterkonzert</h3>
+          <p>Dienstag, den 27. Juni 1967</p>
+          <p>Leitung: Wolfgang Sawallisch</p>
+          <p>Solist: Josef Suk, Violine</p>
+          <p>Wolfgang Amadeus Mozart: ≪Neue Lambacher-Sinfonie≫, KV 45a</p>
+          <p>Antonin Dvorak: Violinkonzert in a-moll, op. 53</p>
+          <p>Igor Strawinsky: Sinfonie in C</p>
+        </article>
+        <article>
+          <h3 class="orchesterkonzert">Orchesterkonzert</h3>
+          <p>Dienstag, den 4. Juli 1967</p>
+          <p>Leitung: Rudolf Kempe</p>
+          <p>Solisten: Trio di Trieste</p>
+          <p>Ludwig van Beethoven: Tripelkonzert in C-dur, op. 56</p>
+          <p>Richard Strauss: Eine Alpensinfonie, op. 64</p>
+        </article>
+
+        <article class="disclaimer">
+          <div>
+            <h3>Vorverkaufsstellen</h3>
+            <p>Tonhallekasse, Hug & Co, Limmatqual</p>
+            <p>Pianohaus Jecklin, Pfauen</p>
+            <p>Reisebüro Kuoni AG, Bahnhofplatz</p>
+          </div>
+          <div>
+            <h3>Preise der Einzelkarten</h3>
+            <ol type="a">
+              <li>für die fünf Orchesterkonzerte Fr. 9.- bis 24.-</li>
+              <li>für den Liederabend Fr. 4.50 bis 15.-</li>
+              <li>für den Kammermusikabend Fr. 4.40 bis 9.90</li>
+            </ol>
+          </div>
+        </article>
+      </div>
+    </main>
+    <p class="copyright">
+      <a href="https://lau.work">Laura</a>, 2020. Original design work by Josef Müller-Brockmann
+    </p>
+  </body>
+</html>
