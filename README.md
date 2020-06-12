@@ -19,6 +19,11 @@ These are all the posters available to explore in this repo. More will (hopefull
 :-------------------------:|:-------------------------:
 !["Musica Viva" poster from 1959 in its web version](screenshots/musica-viva-1959.png)  |  !["Musica Viva" poster from 1961 in its web version](screenshots/musica-viva-1961.png)
 
+[Brockmann (1967)](https://laurasandoval.github.io/ResponsiveMullerBrockmann/brockmann-1967/)
+:-------------------------:
+!["Brockmann" poster from 1967 in its web version](screenshots/brockmann-1967.png)
+
+
 ## Contributing
 Feel like adding one? Sure! Just make it simple, concise, and accessible.
 
