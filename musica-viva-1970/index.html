@@ -147,7 +147,7 @@
 
       @media (max-width: 460px) {
         body {
-          grid-template-rows: 0.4fr repeat(2, 1fr) 0.4fr repeat(2, 1fr);
+          grid-template-rows: 0.2fr repeat(2, 1fr) 0.1fr repeat(2, 1fr);
           grid-gap: 14px 2px;
           height: auto;
           min-height: 100%;
@@ -156,6 +156,9 @@
         body > span {
           font-size: 84px;
         }
+        body > .column {
+        padding: 0;
+      }
         body > .column:nth-of-type(1) {
           grid-column: var(--content-start-column) /
             calc(var(--content-start-column) + 9);
