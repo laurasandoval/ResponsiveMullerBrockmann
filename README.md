@@ -10,7 +10,7 @@ So he basically knows a bit or two about grids (he actually wrote [a really inte
 ## About this project
 I'm a big CSS grid evangelist™, but I realized I didn't have much experience exploring it in non-work related projects, so I though I might as well do!
 
-I chose to play around with Müller's graphic design work because of it's very peculiar grids and heavy reliance on typography.
+I chose to play around with Müller's graphic design work because of its very peculiar grids and heavy reliance on typography.
 
 ## Poster Directory
 These are all the posters available to explore in this repo. More will (hopefully) be added soon. In all cases, you can see the original version by adding `/original.jpg` to the URL.
