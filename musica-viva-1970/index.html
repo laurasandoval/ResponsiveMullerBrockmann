@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="de-ch">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
+    <title>musica viva</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      p,
+      span {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #fff900;
+        margin: 0;
+        text-transform: lowercase;
+      }
+
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        background: #204bdc;
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        --content-start-column: 6;
+        display: grid;
+        grid-template-columns: repeat(26, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 2px;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        text-rendering: geometricPrecision;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body > span {
+        font-size: 154px;
+        font-weight: 400;
+        line-height: 1;
+        color: #60c029;
+        align-self: end;
+      }
+
+      body > span:nth-child(1) {
+        grid-column: var(--content-start-column) /
+          calc(var(--content-start-column) + 7);
+        grid-row: 2/3;
+        text-align: right;
+      }
+
+      body > span:nth-child(2) {
+        grid-column: calc(var(--content-start-column) + 7) /
+          calc(var(--content-start-column) + 11);
+        grid-row: 2/3;
+        text-align: right;
+      }
+
+      body > span:nth-child(3) {
+        grid-column: calc(var(--content-start-column) + 11) /
+          calc(var(--content-start-column) + 15);
+        grid-row: 2/3;
+        text-align: center;
+      }
+
+      body > span:nth-child(4) {
+        grid-column: calc(var(--content-start-column) + 11) /
+          calc(var(--content-start-column) + 15);
+        grid-row: 3/4;
+        text-align: center;
+        align-self: start;
+        line-height: 0.8;
+      }
+
+      body > span:nth-child(5) {
+        grid-column: calc(var(--content-start-column) + 15) /
+          calc(var(--content-start-column) + 21);
+        grid-row: 2/3;
+      }
+
+      body > .column {
+        grid-row: 4/5;
+        padding: 42px 0;
+      }
+
+      body > .column:nth-of-type(1) {
+        grid-column: var(--content-start-column) /
+          calc(var(--content-start-column) + 6);
+      }
+
+      body > .column:nth-of-type(2) {
+        grid-column: calc(var(--content-start-column) + 7) /
+          calc(var(--content-start-column) + 10);
+        text-align: right;
+      }
+
+      body > .column:nth-of-type(3) {
+        grid-column: calc(var(--content-start-column) + 11) /
+          calc(var(--content-start-column) + 14);
+        text-align: right;
+      }
+
+      body > .column:nth-of-type(4) {
+        grid-column: calc(var(--content-start-column) + 15) /
+          calc(var(--content-start-column) + 21);
+      }
+
+      body > .column > article:not(:first-child) {
+        margin-top: 14px;
+      }
+
+      body > .column > article > p.copyright {
+        font-size: 6px;
+      }
+
+      body > .column > article > p.copyright a {
+        color: currentColor;
+        text-decoration: underline;
+        cursor: pointer;
+        margin: -10px;
+        padding: 10px;
+      }
+
+      @media (max-width: 750px) {
+        body {
+          --content-start-column: 3;
+          grid-template-columns: repeat(23, 1fr);
+        }
+      }
+
+      @media (max-width: 660px) {
+        body {
+          --content-start-column: 2;
+          grid-template-columns: repeat(22, 1fr);
+        }
+        body > span {
+          font-size: 112px;
+        }
+      }
+
+      @media (max-width: 460px) {
+        body {
+          grid-template-rows: 0.4fr repeat(2, 1fr) 0.4fr repeat(2, 1fr);
+          grid-gap: 14px 2px;
+          height: auto;
+          min-height: 100%;
+          padding-bottom: 56px;
+        }
+        body > span {
+          font-size: 84px;
+        }
+        body > .column:nth-of-type(1) {
+          grid-column: var(--content-start-column) /
+            calc(var(--content-start-column) + 9);
+          grid-row: 5/6;
+        }
+        body > .column:nth-of-type(2) {
+          grid-column: calc(var(--content-start-column) + 11) /
+            calc(var(--content-start-column) + 20);
+          grid-row: 5/6;
+        }
+        body > .column:nth-of-type(3) {
+          grid-column: var(--content-start-column) /
+            calc(var(--content-start-column) + 9);
+          grid-row: 6/7;
+          text-align: left;
+        }
+        body > .column:nth-of-type(4) {
+          grid-column: calc(var(--content-start-column) + 11) /
+            calc(var(--content-start-column) + 20);
+          grid-row: 6/7;
+          text-align: right;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <span aria-hidden="true">mu</span>
+    <span aria-hidden="true">s</span>
+    <span aria-hidden="true">v<br />i</span>
+    <span aria-hidden="true">v<br />a</span>
+    <span aria-hidden="true">ca</span>
+    <div class="column">
+      <article><h1>Musica Viva-Konzert</h1></article>
+      <article>
+        <h2>Donnerstag, 8. januar 1970</h2>
+        <h3>20.15 uhr</h3>
+        <h4>Grosser Tonhallesaal</h4>
+      </article>
+      <article>
+        <p>12, sinfoniekonzert</p>
+        <p>der</p>
+        <p>tonhalle-gesellschaft zürich</p>
+      </article>
+    </div>
+    <div class="column">
+      <article><p>Leitung Charles Dutoit</p></article>
+      <article>
+        <p>Solist</p>
+        <p>Karl Engel</p>
+        <p>Klavier</p>
+      </article>
+      <article><p>Tonhalle-Orchester</p></article>
+    </div>
+    <div class="column">
+      <article><p>Klaus Huber</p></article>
+      <article>
+        <p>György Ligeti</p>
+        <p>Igor Strawinsky</p>
+      </article>
+      <article><p>Klaus Huber</p></article>
+    </div>
+    <div class="column">
+      <article>
+        <p>≪Tenebrae≫</p>
+        <p>für grosses orchester</p>
+        <p>1966-67</p>
+        <p>≪Atmosphères≫</p>
+        <p>Konzert</p>
+        <p>für klavier, blasinstrumente, kontrabässe und pauke</p>
+        <p>≪Tenebrae≫</p>
+        <p>Wiederholung</p>
+      </article>
+      <article>
+        <p class="copyright">
+          <a href="https://lau.work">Laura</a>, 2020. Original design work by
+          Josef Müller-Brockmann
+        </p>
+      </article>
+    </div>
+  </body>
+</html>
